@@ -36,6 +36,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun AgeInputScreen() {
     var age by remember { mutableStateOf("") }
+    var showMessage by remember { mutableStateOf(false) }
 
     Column(
         modifier = Modifier
@@ -64,6 +65,29 @@ fun AgeInputScreen() {
             ),
             modifier = Modifier.fillMaxWidth()
         )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Button(
+            onClick = { showMessage = true },
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF3EBB76), // Botón verde
+                contentColor = Color.White
+            )
+        ) {
+            Text("Mostrar edad")
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        if (showMessage && age.isNotEmpty()) {
+            Text(
+                text = "Tu edad es: $age",
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Medium,
+                color = Color(0xFF40E0D0) // Turquesa
+            )
+        }
     }
 }
 
