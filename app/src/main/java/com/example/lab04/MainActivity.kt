@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
             Lab04Theme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = Color.White // Fondo limpio
+                    color = Color.Black // Fondo limpio
                 ) {
                     AgeInputScreen()
                 }
@@ -96,7 +96,7 @@ fun AgeInputScreen() {
                 text = "Tu edad es: $age",
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Medium,
-                color = Color(0xFF3c1421) // Turquesa
+                color = Color(0xFFed1c24) // Turquesa
             )
         }
     }
