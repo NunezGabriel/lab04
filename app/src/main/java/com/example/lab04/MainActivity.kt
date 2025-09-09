@@ -60,19 +60,19 @@ fun AgeInputScreen() {
             text = "Ingresa tu edad",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
-            color = Color(0xFF3EBB76), // Verde personalizado
+            color = Color(0xFFed1c24), // Verde personalizado
             modifier = Modifier.padding(bottom = 16.dp)
         )
 
         OutlinedTextField(
             value = age,
             onValueChange = { age = it },
-            label = { Text("Edad", color = Color(0xFF3EBB76)) },
+            label = { Text("Edad", color = Color(0xFFed1c24)) },
             singleLine = true,
             colors = OutlinedTextFieldDefaults.colors(
-                focusedBorderColor = Color(0xFF3EBB76),
-                unfocusedBorderColor = Color(0xFF3EBB76),
-                cursorColor = Color(0xFF3EBB76)
+                focusedBorderColor = Color(0xFFed1c24),
+                unfocusedBorderColor = Color(0xFFed1c24),
+                cursorColor = Color(0xFFed1c24)
             ),
             modifier = Modifier.fillMaxWidth()
         )
@@ -82,8 +82,8 @@ fun AgeInputScreen() {
         Button(
             onClick = { showMessage = true },
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFF3EBB76), // Botón verde
-                contentColor = Color.White
+                containerColor = Color(0xFFed1c24), // Botón verde
+                contentColor = Color.Black
             )
         ) {
             Text("Mostrar edad")
@@ -96,7 +96,7 @@ fun AgeInputScreen() {
                 text = "Tu edad es: $age",
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Medium,
-                color = Color(0xFF40E0D0) // Turquesa
+                color = Color(0xFF3c1421) // Turquesa
             )
         }
     }
