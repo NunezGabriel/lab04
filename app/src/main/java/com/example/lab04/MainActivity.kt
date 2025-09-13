@@ -20,6 +20,8 @@ import com.example.lab04.ui.theme.Lab04Theme
 
 //Gabriel estuvo aqui
 
+//Marcelo estuvo aqui
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
